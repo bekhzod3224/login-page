@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:http/http.dart';
 import 'dart:convert';
 import '../model/login_model.dart';
 
@@ -20,3 +22,24 @@ class APIService {
     }
 
   }
+class HttpService {
+  final String postsURL = "https://vvmarket.abr.tj/api/v1/products/autocomplete/?q=&page=1";
+
+  Future<List<Post>> getPosts() async {
+    Response res = await get(postsURL);
+
+    if (res.statusCode == 200) {
+      List<dynamic> body = jsonDecode(res.body);
+      print(res.body);
+      List<Post> posts = body
+          .map(
+            (dynamic item) => Post.fromJson(item),
+      )
+          .toList();
+
+      return posts;
+    } else {
+      throw "Can't get posts.";
+    }
+  }
+}

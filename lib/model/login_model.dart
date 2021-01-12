@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 class LoginResponse{
   final String token;
   final String error;
@@ -28,5 +30,29 @@ class LoginRequestModel {
     };
 
     return map;
+  }
+}
+
+
+class Post {
+
+  final int id;
+  final String name;
+
+
+  Post({
+
+    @required this.id,
+    @required this.name,
+
+  });
+
+  factory Post.fromJson(Map<String, dynamic> json) {
+    return Post(
+
+      id: json['id'] as int,
+      name: json['name'] as String,
+
+    );
   }
 }
