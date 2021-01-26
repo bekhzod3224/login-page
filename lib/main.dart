@@ -3,12 +3,20 @@ import 'package:http/http.dart' as http;
 import 'package:loginpage/model/login_model.dart';
 import 'dart:convert';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+<<<<<<< Updated upstream
+=======
+import 'package:loginpage/pages/form/multi_form.dart';
+import 'package:loginpage/pages/page.dart';
+import 'package:loginpage/prolist.dart';
+import 'package:loginpage/test.dart';
+>>>>>>> Stashed changes
 import 'package:loginpage/user.dart';
 import 'package:flutter_progress_hud/flutter_progress_hud.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -64,7 +72,14 @@ class LoginState extends State<Login> {
 
   LoginRequestModel loginRequestModel;
   void inState(BuildContext context) {
+<<<<<<< Updated upstream
     print("ok");
+=======
+    print("hello");
+    Navigator.push(context, MaterialPageRoute(builder: (_){
+      return MultiForm();
+    }),);
+>>>>>>> Stashed changes
   }
 
   @override
@@ -119,12 +134,21 @@ class LoginState extends State<Login> {
                       child: RaisedButton(
                         onPressed: () async {
                           showDialog(
+<<<<<<< Updated upstream
                               context: context,
                               builder: (BuildContext context) {
                                 return Center(
                                   child: CircularProgressIndicator(),
                                 );
                               });
+=======
+
+                              context: context,
+                              builder: (BuildContext context) {
+                                return Center(child: CircularProgressIndicator(),);
+                              });
+
+>>>>>>> Stashed changes
 
                           // Navigator.pop(context);
                           loginApi(context, "");
@@ -139,7 +163,12 @@ class LoginState extends State<Login> {
                           "Войти",
                           style: TextStyle(fontSize: 20.0),
                         ),
+<<<<<<< Updated upstream
                       ),
+=======
+                        child: Text("test",style: TextStyle(fontSize: 20.0),),),
+
+>>>>>>> Stashed changes
                     ),
                   ),
                 ],
