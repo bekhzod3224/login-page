@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 import 'package:loginpage/pages/form/multi_form.dart';
@@ -14,6 +15,8 @@ import 'package:loginpage/prolist.dart';
 import 'package:loginpage/test.dart';
 import 'package:searchable_dropdown/searchable_dropdown.dart';
 >>>>>>> main
+=======
+>>>>>>> parent of 976a345... admin
 
 class UserPage extends StatelessWidget {
   final String username;
@@ -24,6 +27,7 @@ class UserPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
         title: Text(username),
@@ -120,6 +124,9 @@ class UserPage extends StatelessWidget {
 >>>>>>> Stashed changes
 =======
 >>>>>>> main
+=======
+        title: Text(username),
+>>>>>>> parent of 976a345... admin
       ),
     );
   }

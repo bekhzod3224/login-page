@@ -4,6 +4,7 @@ import 'package:loginpage/model/login_model.dart';
 import 'dart:convert';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 import 'package:loginpage/pages/form/multi_form.dart';
@@ -15,13 +16,14 @@ import 'package:loginpage/test.dart';
 import 'package:loginpage/prolist.dart';
 import 'package:loginpage/test.dart';
 >>>>>>> main
+=======
+>>>>>>> parent of 976a345... admin
 import 'package:loginpage/user.dart';
 import 'package:flutter_progress_hud/flutter_progress_hud.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -79,6 +81,7 @@ class LoginState extends State <Login> {
   LoginRequestModel loginRequestModel;
   void inState(BuildContext context) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     print("ok");
 =======
@@ -93,6 +96,9 @@ class LoginState extends State <Login> {
       return ProList();
     }),);
 >>>>>>> main
+=======
+    print("ok");
+>>>>>>> parent of 976a345... admin
   }
 
   @override
@@ -156,13 +162,13 @@ class LoginState extends State <Login> {
                         onPressed: () async {
 <<<<<<< HEAD
                           showDialog(
-<<<<<<< Updated upstream
                               context: context,
                               builder: (BuildContext context) {
                                 return Center(
                                   child: CircularProgressIndicator(),
                                 );
                               });
+<<<<<<< HEAD
 =======
 
                               context: context,
@@ -174,6 +180,8 @@ class LoginState extends State <Login> {
 =======
 
 >>>>>>> main
+=======
+>>>>>>> parent of 976a345... admin
 
                           // Navigator.pop(context);
                           loginApi(context, "");
@@ -221,6 +229,7 @@ class LoginState extends State <Login> {
                             borderRadius: new BorderRadius.circular(10.0)
                         ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                       ),
 =======
@@ -231,6 +240,9 @@ class LoginState extends State <Login> {
                         child: Text("Войти",style: TextStyle(fontSize: 20.0),),),
 
 >>>>>>> main
+=======
+                      ),
+>>>>>>> parent of 976a345... admin
                     ),
                   ),
                 ],
