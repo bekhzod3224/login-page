@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 import 'package:http/http.dart' as http;
 =======
@@ -8,6 +9,11 @@ import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 import 'package:loginpage/services/urlApi.dart';
 >>>>>>> Stashed changes
+=======
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/http.dart';
+>>>>>>> main
 import 'dart:convert';
 import '../model/login_model.dart';
 
@@ -79,6 +85,7 @@ class HttpService{
     }
 
   }
+<<<<<<< HEAD
 
   Future<List<ProModel>> getProduct(filter) async {
       var models = null;
@@ -133,3 +140,26 @@ class HttpService{
   // }
 // }
 >>>>>>> Stashed changes
+=======
+class HttpService {
+  final String postsURL = "https://vvmarket.abr.tj/api/v1/products/autocomplete/?q=&page=1";
+
+  Future<List<Post>> getPosts() async {
+    Response res = await get(postsURL);
+
+    if (res.statusCode == 200) {
+      List<dynamic> body = jsonDecode(res.body);
+      print(res.body);
+      List<Post> posts = body
+          .map(
+            (dynamic item) => Post.fromJson(item),
+      )
+          .toList();
+
+      return posts;
+    } else {
+      throw "Can't get posts.";
+    }
+  }
+}
+>>>>>>> main

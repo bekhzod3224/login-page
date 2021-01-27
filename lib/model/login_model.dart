@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 class LoginResponse{
   final String token;
   final String error;
@@ -30,8 +32,11 @@ class LoginRequestModel {
     return map;
   }
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> main
 
 
 class Post {
@@ -47,17 +52,24 @@ class Post {
 
   });
 
+<<<<<<< HEAD
 
 
   factory Post.fromJson(Map<String, dynamic> json) {
 
     return Post(
+=======
+  factory Post.fromJson(Map<String, dynamic> json) {
+    return Post(
+
+>>>>>>> main
       id: json['id'] as int,
       name: json['name'] as String,
 
     );
   }
 }
+<<<<<<< HEAD
 
 class ProModel {
   final String id;
@@ -94,3 +106,5 @@ class ProModel {
   String toString() => name;
 }
 >>>>>>> Stashed changes
+=======
+>>>>>>> main

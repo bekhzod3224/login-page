@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 import 'package:loginpage/pages/form/multi_form.dart';
@@ -7,6 +9,11 @@ import 'package:loginpage/prolist.dart';
 import 'package:loginpage/test.dart';
 import 'package:searchable_dropdown/searchable_dropdown.dart';
 >>>>>>> Stashed changes
+=======
+import 'package:loginpage/prolist.dart';
+import 'package:loginpage/test.dart';
+import 'package:searchable_dropdown/searchable_dropdown.dart';
+>>>>>>> main
 
 class UserPage extends StatelessWidget {
   final String username;
@@ -17,9 +24,12 @@ class UserPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         title: Text(username),
 =======
+=======
+>>>>>>> main
         title: Container(
           margin: EdgeInsets.all(100.0),
           child: Row(
@@ -33,7 +43,10 @@ class UserPage extends StatelessWidget {
           ),
         ),
       ),
+<<<<<<< HEAD
       //manashu pageda ishlaveraylik
+=======
+>>>>>>> main
       drawer: new Drawer(
         child: ListView(
           children: <Widget>[
@@ -44,7 +57,10 @@ class UserPage extends StatelessWidget {
                   backgroundImage: new NetworkImage('https://vvmarket.abr.tj/favicon.ico'),
                 ),
             ),
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
             new ListTile(
 
               title: Row(
@@ -56,7 +72,11 @@ class UserPage extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(context, new MaterialPageRoute(
+<<<<<<< HEAD
                     builder: (BuildContext context) => new PostPage() ),);
+=======
+                    builder: (BuildContext context) => new Tests() ),);
+>>>>>>> main
               } ,
 
             ),
@@ -71,7 +91,11 @@ class UserPage extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(context, new MaterialPageRoute(
+<<<<<<< HEAD
                     builder: (BuildContext context) => new MultiForm() ),);
+=======
+                    builder: (BuildContext context) => new ProList() ),);
+>>>>>>> main
               } ,
 
             ),
@@ -92,7 +116,10 @@ class UserPage extends StatelessWidget {
 
           ],
         ),
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
       ),
     );
   }
