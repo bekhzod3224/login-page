@@ -3,14 +3,25 @@ import 'package:http/http.dart' as http;
 import 'package:loginpage/model/login_model.dart';
 import 'dart:convert';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+import 'package:loginpage/pages/form/multi_form.dart';
+import 'package:loginpage/pages/page.dart';
 import 'package:loginpage/prolist.dart';
 import 'package:loginpage/test.dart';
+>>>>>>> Stashed changes
+=======
+import 'package:loginpage/prolist.dart';
+import 'package:loginpage/test.dart';
+>>>>>>> main
 import 'package:loginpage/user.dart';
 import 'package:flutter_progress_hud/flutter_progress_hud.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -67,10 +78,21 @@ class LoginState extends State <Login> {
 
   LoginRequestModel loginRequestModel;
   void inState(BuildContext context) {
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+    print("ok");
+=======
+    print("hello");
+    Navigator.push(context, MaterialPageRoute(builder: (_){
+      return MultiForm();
+    }),);
+>>>>>>> Stashed changes
+=======
     print("hello");
     Navigator.push(context, MaterialPageRoute(builder: (_){
       return ProList();
     }),);
+>>>>>>> main
   }
 
   @override
@@ -132,7 +154,26 @@ class LoginState extends State <Login> {
                       child: RaisedButton(
 
                         onPressed: () async {
+<<<<<<< HEAD
+                          showDialog(
+<<<<<<< Updated upstream
+                              context: context,
+                              builder: (BuildContext context) {
+                                return Center(
+                                  child: CircularProgressIndicator(),
+                                );
+                              });
+=======
 
+                              context: context,
+                              builder: (BuildContext context) {
+                                return Center(child: CircularProgressIndicator(),);
+                              });
+
+>>>>>>> Stashed changes
+=======
+
+>>>>>>> main
 
                           // Navigator.pop(context);
                           loginApi(context, "");
@@ -179,8 +220,17 @@ class LoginState extends State <Login> {
                         shape: RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(10.0)
                         ),
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+                      ),
+=======
+                        child: Text("test",style: TextStyle(fontSize: 20.0),),),
+
+>>>>>>> Stashed changes
+=======
                         child: Text("Войти",style: TextStyle(fontSize: 20.0),),),
 
+>>>>>>> main
                     ),
                   ),
                 ],
